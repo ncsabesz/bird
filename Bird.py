@@ -120,7 +120,7 @@ class Bird:
 
 
 class Pipe:
-    GAP = 80 #space between the pipes
+    GAP = 120 #space between the pipes
     VEL = 6 #speed of pipes
 
     #setup parameters
