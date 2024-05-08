@@ -359,7 +359,7 @@ def run_game(genomes, config):
     global FPS
 
     score = 0
-    FPS = 25
+    FPS = 30
 
     generation += 1
     population = len(genomes)
