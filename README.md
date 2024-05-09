@@ -1,1 +1,1 @@
-# bird game with AI
+# Floppy bird game with AI support
