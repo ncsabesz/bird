@@ -2,9 +2,10 @@
 Floppy bird game with AI support
 '''
 
-import neat.config
 import pygame
+import neat.config
 import neat
+
 import time
 import os
 import random
@@ -443,6 +444,7 @@ def run(config_path):
     pygame.quit()
     quit()
 #end of function run
+
 
 
 #the big boom
