@@ -160,11 +160,6 @@ class MainApp:
         gen = []
         nets = []
         birds = []
-        # global generation
-        # global population
-        
-        # global score
-        # global FPS
 
         self.score = 0
         self.FPS = 30
