@@ -3,10 +3,11 @@ import os
 
 class Base:
     VEL = 7
-    IMG = pygame.transform.scale2x(pygame.image.load(os.path.join("img","base.png")));
-    WIDTH = IMG.get_width()
     
     def __init__(self, y):
+        self.IMG = pygame.transform.scale2x(pygame.image.load(os.path.join("img","base.png")));
+        self.WIDTH = self.IMG.get_width()
+        
         self.y = y
         self.x1 = 0
         self.x2 = self.WIDTH
@@ -33,5 +34,3 @@ class Base:
         win.blit(self.IMG,(self.x1,self.y))
         win.blit(self.IMG,(self.x2,self.y))
     #end of function draw
-
-#end of class Base

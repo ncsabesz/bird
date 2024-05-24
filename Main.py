@@ -23,9 +23,6 @@ class MainApp:
     generation = 0
     population = 0
 
-    pygame.font.init()
-    START_FONT = pygame.font.SysFont("comicsans",40)
-
     #set the desired screen size
     #tuple type collection
     screen_size = (WIN_WIDTH,WIN_HEIGHT)
@@ -33,7 +30,9 @@ class MainApp:
     BG_IMG = pygame.transform.scale2x(pygame.image.load(os.path.join("img","bg.png")))
 
     def __init__(self):
-        pass
+        pygame.font.init()
+        self.START_FONT = pygame.font.SysFont("comicsans",40)
+ 
 
     #draw the everything on the window screen
     def draw_window(self, win, birds, pipes, base):
@@ -258,6 +257,4 @@ if __name__ == "__main__":
     #run the program here
     app = MainApp()
     app.run(config_path)
-
-
 #end of entry point

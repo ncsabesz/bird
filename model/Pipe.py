@@ -5,10 +5,11 @@ import random
 class Pipe:
     GAP = 120 #space between the pipes
     VEL = 6 #speed of pipes
-    PIPE_IMG = pygame.transform.scale2x(pygame.image.load(os.path.join("img","pipe.png")))
 
     #setup parameters
     def __init__(self, x):
+        self.PIPE_IMG = pygame.transform.scale2x(pygame.image.load(os.path.join("img","pipe.png")))
+
         self.x = x
         self.height = 0
         self.top = 0
@@ -66,5 +67,3 @@ class Pipe:
         #otherwise no collision detected
         return False 
     #end of function collide
-
-#end of class Pipe

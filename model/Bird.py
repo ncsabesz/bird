@@ -2,16 +2,16 @@ import pygame
 import os
 
 class Bird:
-    #setup basic parameters
     ANIMATION_TIME = 3 #wait time beatween bird animation
-    BIRD_IMGS = [
+
+    #every class must have a constructor
+    def __init__(self, x, y):
+        self.BIRD_IMGS = [
             pygame.transform.scale2x(pygame.image.load(os.path.join("img","bird1.png"))),
             pygame.transform.scale2x(pygame.image.load(os.path.join("img","bird2.png"))),
             pygame.transform.scale2x(pygame.image.load(os.path.join("img","bird3.png")))
         ]
 
-    #every class must have a constructor
-    def __init__(self, x, y):
         self.x = x #x coord of the bird
         self.y = y #y coord of the bird
         self.tick_count = 0 #movment counter
@@ -76,5 +76,3 @@ class Bird:
     def get_mask(self):
         return pygame.mask.from_surface(self.img)
     #end of funczion get_mask
-
-#end of class Bird
